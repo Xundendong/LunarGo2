@@ -1,0 +1,36 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.7",
+  "Description": "LunarGo2: Unreal Engine and MuJoCo lunar locomotion",
+  "Modules": [
+    {
+      "Name": "LunarG1",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
+  ],
+  "Plugins": [
+    {
+      "Name": "ProceduralMeshComponent",
+      "Enabled": true
+    },
+    {
+      "Name": "PythonScriptPlugin",
+      "Enabled": true,
+      "TargetAllowList": [
+        "Editor"
+      ]
+    },
+    {
+      "Name": "EditorScriptingUtilities",
+      "Enabled": true,
+      "TargetAllowList": [
+        "Editor"
+      ]
+    },
+    {
+      "Name": "AndroidFileServer",
+      "Enabled": false
+    }
+  ]
+}

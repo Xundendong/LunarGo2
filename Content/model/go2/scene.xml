@@ -1,0 +1,19 @@
+<mujoco model="go2 lunar scene">
+  <include file="go2.xml"/>
+
+  <statistic center="0 0 0" extent="20"/>
+
+  <asset>
+    <hfield name="terrain" nrow="1501" ncol="1501" size="150 150 43.329837500 0.001"/>
+  </asset>
+
+  <worldbody>
+    <geom name="terrain" type="hfield" hfield="terrain" pos="0 0 -21.031756250"
+          contype="1" conaffinity="1" condim="3" friction="0.7 0.005 0.0001"/>
+  </worldbody>
+
+  <keyframe>
+    <key name="home"
+         qpos="0 0 -7.880912500 1 0 0 0 0.100 0.800 -1.500 -0.100 0.800 -1.500 0.100 1.000 -1.500 -0.100 1.000 -1.500"/>
+  </keyframe>
+</mujoco>
