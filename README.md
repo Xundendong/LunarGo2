@@ -51,6 +51,6 @@ cd LunarGo2
 
 ## 源码构建
 
-见 [构建说明](docs/BUILD.md)。源码可公开；可编辑的付费月面资产不包含在 Git 仓库中。复现此地图需要自己拥有 [Moon Landscape Open World](https://www.fab.com/listings/dea3878b-b56c-4c3b-880a-34dbe3ef778e)。发布包包含的是完成的应用，并不授予素材转售或独立分发权限。
+见 [构建说明](docs/BUILD.md)。代码仓库包含机器人运行与仿真集成代码；地图源工程需单独准备。直接体验请下载 Linux 发布包。
 
-代码采用 MIT；依赖、机器人模型、策略及商业素材分别遵循其原授权，见 [第三方声明](THIRD_PARTY_NOTICES.md)。
+集成代码采用 MIT；第三方组件遵循各自授权，见 [第三方声明](THIRD_PARTY_NOTICES.md)。

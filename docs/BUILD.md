@@ -1,19 +1,19 @@
 # 从源码构建
 
-需要 Linux x86_64、Unreal Engine 5.7、Python 3，以及自己授权的 Epiqua Moon Landscape Open World 工程。设置 `UE_ROOT` 为包含 `Engine/` 的引擎目录。
+需要 Linux x86_64、Unreal Engine 5.7、Python 3，以及配套月面场景源工程（不随代码仓库提供）。设置 `UE_ROOT` 为包含 `Engine/` 的引擎目录。
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements-build.txt
-python scripts/import_assets.py /path/to/licensed/MoonProject
+python scripts/import_assets.py /path/to/MoonProject
 export UE_ROOT=/path/to/UnrealEngine_5.7
 ./scripts/build.sh
 ```
 
-MuJoCo 和 ONNX Runtime Linux 库、Go2 模型和 ONNX 权重已随源码依赖提供。`scripts/import_assets.py` 只从你提供的工程复制需要的地图素材，并从 Poly Haven 下载 CC0 碎石纹理；不包含商店登录、购买或下载付费资源的绕过方式。
+MuJoCo 和 ONNX Runtime Linux 库、Go2 模型和 ONNX 权重已随源码依赖提供。`scripts/import_assets.py` 只从你提供的工程复制需要的地图素材，并从 Poly Haven 下载 CC0 碎石纹理。
 
-`build.sh` 会生成共享碰撞高度场，编译编辑器模块，烘焙外观，再生成 Linux 包。输出目录为 `dist/Linux`。商业地图和生成的材质、碰撞数据均由 `.gitignore` 排除。
+`build.sh` 会生成共享碰撞高度场，编译编辑器模块，烘焙外观，再生成 Linux 包。输出目录为 `dist/Linux`。地图和生成的材质、碰撞数据均由 `.gitignore` 排除。
 
 准备完成后，可以用编辑器运行或调试：
 
